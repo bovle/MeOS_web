@@ -1,0 +1,65 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#container {
+    overflow: hidden;
+}
+
+ul {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+li:first-child h3  {
+    margin-block-start: 0px;
+}
+
+#results {
+    position: relative;
+    
+}
+
+.auto-scroll {
+    animation-name: auto-scroll;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes auto-scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+.config {
+    position: absolute;
+    top: 5vh;
+    left: 8vw;
+    height: 90vh;
+    width: 84vw;
+    background-color: white;
+    border: solid;
+    padding: 1%;
+}
+
+.hide {
+    display: none;
+}
+
+.class-config {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.error {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background: red;
+}
